@@ -1,0 +1,45 @@
+mkdir ~/tmp/hello-test
+cd ~/tmp/hello-test
+
+git init
+
+touch README.md
+echo "readme1" >> README.md
+git add .
+git commit -m 'readme1'
+
+git branch
+git log
+
+git checkout -b dev1
+echo "readme2" >> README.md
+git commit -am 'readme2'
+
+git branch
+git log
+
+git checkout master
+git log
+
+git rebase dev1
+git log
+
+git checkout dev1
+git log
+
+git checkout master
+git branch -d dev1
+
+git branch
+
+git checkout -b dev2
+
+echo "wrong content" >> README.md
+git commit -am 'wrong content'
+
+git checkout master
+git branch -d dev2
+git branch -D dev2
+
+git branch
+
