@@ -1,0 +1,56 @@
+mkdir ~/tmp/hello-test
+cd ~/tmp/hello-test
+
+git init
+ls -a
+
+git branch
+git remote -v
+
+touch README.md
+echo "readme" >> README.md
+git add .
+git commit -m 'readme'
+
+git branch
+git log
+git log --name-status
+
+git checkout -b user
+git branch
+
+git checkout master
+git branch
+
+git checkout user
+git branch
+
+touch user.js
+echo "class User {}" >> user.js
+git add .
+git status
+git commit -m 'user'
+
+ls -a
+git log
+git log --name-status
+
+git checkout master
+ls -a
+git log
+
+git checkout user
+ls -a
+git log
+
+hub create
+
+git remote -v
+
+git push origin user
+
+git checkout master
+
+git push origin master
+
+hub browse
