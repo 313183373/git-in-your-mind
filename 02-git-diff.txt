@@ -1,0 +1,50 @@
+mkdir ~/tmp/hello-test
+cd ~/tmp/hello-test
+ls -a
+
+git status
+
+git init
+ls -a
+
+git branch
+git status
+git remote -v
+
+touch README.md
+echo "readme1" >> README.md
+git status
+
+git diff
+
+git add .
+git status
+git diff
+git diff --cached
+
+git "readme2" >> README.md
+git status
+
+git diff
+git diff --cached
+
+git add .
+git status
+git diff
+git diff --cached
+
+git branch
+
+git commit -m 'readme'
+
+git branch
+
+git log
+git log --name-status
+
+hub create
+
+git remote -v
+git push origin master
+
+hub browse

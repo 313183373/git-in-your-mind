@@ -1,0 +1,18 @@
+mkdir ~/tmp/hello-test
+cd ~/tmp/hello-test
+
+git init
+
+touch README.md
+echo "readme" >> README.md
+git add .
+git commit -m 'readme'
+
+git log
+
+hub create
+
+git remote -v
+git push origin master
+
+hub browse
