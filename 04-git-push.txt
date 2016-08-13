@@ -1,0 +1,47 @@
+mkdir ~/tmp/hello-test
+cd ~/tmp/hello-test
+
+git init
+
+touch README.md
+echo "readme" >> README.md
+git add .
+git commit -m 'readme'
+ls -a
+
+hub create
+
+git push
+git push origin master
+git push
+
+echo "readme2" >> README.md
+git commit -am 'readme2'
+git push -u origin master
+git push
+
+echo "readme3" >> README.md
+git commit -am 'readme3'
+git push
+
+git log --name-status
+
+git checkout -b another
+git branch
+
+echo "readme4" >> README.md
+git commit -am 'readme4'
+git push origin master
+
+hub browse
+// does the `another` branch exist?
+
+git push origin another
+
+hub browse
+// does the `another` branch exist now?
+
+git push origin another:another2
+
+hub browse
+// does the `another2` branch exist now?
