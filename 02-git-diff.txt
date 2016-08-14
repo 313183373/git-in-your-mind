@@ -22,7 +22,7 @@ git status
 git diff
 git diff --cached
 
-git "readme2" >> README.md
+echo "readme2" >> README.md
 git status
 
 git diff
